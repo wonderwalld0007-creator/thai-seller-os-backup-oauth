@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the personal-use Thai Seller OS Backup application.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Privacy Policy | Thai Seller OS Backup</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #223344; background: #f4f7fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.7; }
+    header, main, footer { max-width: 860px; margin: auto; padding: 24px; }
+    header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 700; color: #183d5b; }
+    a { color: #075985; text-underline-offset: 4px; overflow-wrap: anywhere; }
+    a:focus-visible { outline: 3px solid #b45309; outline-offset: 5px; }
+    main { background: #fff; border: 1px solid #dce5ec; border-radius: 16px; margin-top: 12px; padding: clamp(24px, 5vw, 48px); }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 0 0 16px; letter-spacing: -.03em; color: #183d5b; }
+    h2 { margin-top: 32px; font-size: 1.25rem; color: #183d5b; }
+    p, li { max-width: 68ch; }
+    code { font-family: ui-monospace, Consolas, monospace; font-size: .9em; overflow-wrap: anywhere; }
+    .date, footer { color: #52697d; font-size: .9rem; }
+    @media (max-width: 600px) { main { margin: 0 12px; } header, footer { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Thai Seller OS Backup</a>
+    <nav aria-label="Main navigation"><a href="index.html">Application home</a></nav>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="date">Application: Thai Seller OS Backup · Effective date: 13 October 2026</p>
+    <h2>1. Purpose and operator</h2>
+    <p>Thai Seller OS Backup is a personal-use utility operated by the owner of the Google account that authorizes it. Its purpose is to back up selected local files in encrypted form, verify backup integrity, and recover files when needed. It is not offered as a public service.</p>
+    <h2>2. Google data and permissions</h2>
+    <ul>
+      <li><code>https://www.googleapis.com/auth/drive.readonly</code> permits viewing and downloading existing Drive files and their metadata. This permission is account-wide; the utility is configured to operate on a selected backup destination, not to browse unrelated files for other purposes.</li>
+      <li><code>https://www.googleapis.com/auth/drive.file</code> permits creating files and managing files created by, or explicitly made available to, this application. It is not unrestricted write access to all existing Drive files.</li>
+    </ul>
+    <p>File metadata such as identifiers, names, sizes, dates, and available checksums is used to locate and verify backup objects. Existing encrypted backup content may be downloaded for integrity checks or recovery. Account information supplied by the Drive API may be used to verify that the intended account is connected.</p>
+    <p>The permission request alone does not enable scheduled backups or approve an upload. Writes are limited by the owner's separately approved backup workflow. The application does not request Google account passwords.</p>
+    <h2>3. Use and sharing</h2>
+    <p>Google user data is used for the owner's backup, integrity verification, and recovery activities. It is not sold, used for advertising, or used to develop, improve, or train generalized AI or machine-learning models.</p>
+    <p>Google processes the data needed to provide Drive storage and OAuth. GitHub hosts these public informational pages. Backup data and OAuth credentials are not published to this website or its public repository. The owner's use remains subject to the applicable provider terms and privacy policies.</p>
+    <h2>4. Encryption and local storage</h2>
+    <p>Backup content is encrypted locally with restic before upload. Google Drive stores the encrypted backup objects and associated cloud metadata. Local source files, restored files, backup manifests, and verification records remain on the owner's computer unless included in a separately approved encrypted backup scope.</p>
+    <p>OAuth credentials are stored in locally access-restricted configuration files so that approved tasks can authenticate without a browser session. The recovery password is kept separately from cloud backup uploads. These measures do not guarantee protection against compromise of the owner's computer, account, or recovery password.</p>
+    <h2>5. Retention and deletion</h2>
+    <p>Encrypted backup snapshots are retained until the owner approves their removal. No automatic cloud snapshot deletion or pruning is currently enabled. Local authentication configuration and verification records are retained while needed for the owner's backup operation and troubleshooting.</p>
+    <p>Revoking authorization does not delete existing backup files or erase local copies. Their retention or deletion is a separate action controlled by the owner.</p>
+    <h2>6. Revoke authorization</h2>
+    <p>The owner can review and remove this application's access through <a href="https://myaccount.google.com/connections">Google Account third-party connections</a>. Revocation prevents future access using that authorization. The owner should also stop any separately configured tasks and remove no-longer-needed local authentication configuration. Existing encrypted backups still require the recovery password to restore.</p>
+    <h2>7. This website</h2>
+    <p>These pages have no forms, embedded sign-in, advertising, analytics scripts, or application-set cookies. GitHub may process ordinary request information, such as IP addresses, as the hosting provider; see the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Google services have their own <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+    <h2>8. Contact and changes</h2>
+    <p>The account owner is also the application operator. The support contact is provided on the application's Google OAuth consent screen. This policy will be updated if the application's purpose or data practices change.</p>
+    <p><a href="index.html">Return to the application home page</a></p>
+  </main>
+  <footer>Thai Seller OS Backup · Personal-use application</footer>
+</body>
+</html>
