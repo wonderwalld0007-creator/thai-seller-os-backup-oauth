@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Thai Seller OS Backup is a personal, locally operated encrypted cloud backup utility.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <title>Thai Seller OS Backup</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #223344; background: #f4f7fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; line-height: 1.7; }
+    header, main, footer { max-width: 860px; margin: auto; padding: 24px; }
+    header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; }
+    .brand { font-weight: 700; color: #183d5b; }
+    a { color: #075985; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #b45309; outline-offset: 5px; }
+    main { background: #fff; border: 1px solid #dce5ec; border-radius: 16px; margin-top: 12px; padding: clamp(24px, 5vw, 48px); }
+    .eyebrow { margin-top: 0; color: #52697d; font-size: .9rem; font-weight: 650; letter-spacing: .04em; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.15; margin: 12px 0 24px; letter-spacing: -.03em; color: #183d5b; }
+    h2 { margin-top: 32px; font-size: 1.25rem; color: #183d5b; }
+    p, li { max-width: 68ch; }
+    .note { border-left: 3px solid #0e7490; background: #f0f8fb; padding: 14px 18px; margin: 28px 0; }
+    footer { color: #52697d; font-size: .9rem; }
+    @media (max-width: 600px) { main { margin: 0 12px; } header, footer { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="brand">Thai Seller OS Backup</span>
+    <nav aria-label="Main navigation"><a href="privacy.html">Privacy Policy</a></nav>
+  </header>
+  <main>
+    <p class="eyebrow">PERSONAL USE · ENCRYPTED BACKUP</p>
+    <h1>A personal cloud backup utility.</h1>
+    <p>Thai Seller OS Backup is operated locally by its account owner to protect selected local files with encrypted backups stored in the owner's Google Drive. It is not a public backup service and does not offer accounts to website visitors.</p>
+    <h2>How it is used</h2>
+    <ol>
+      <li>The owner chooses the local files and the backup destination.</li>
+      <li>Backup content is encrypted locally using restic before an approved upload.</li>
+      <li>rclone provides Google Drive access through Google's official OAuth authorization flow.</li>
+      <li>Restores are checked locally. Unattended scheduling is a separate setup step and is not activated by this website.</li>
+    </ol>
+    <h2>Google Drive access</h2>
+    <p>The requested permissions are read-only access to existing Drive files and file-level access to files created by, or explicitly made available to, this application. Read-only permission covers the account's Drive files; operations are configured to use the selected backup location. That configuration is not a Google-enforced folder-only permission.</p>
+    <p>Write permission is used only for separately approved backup operations. Existing backup content is not made public by authorizing the application.</p>
+    <div class="note">This informational website does not sign you in, request Drive access, accept uploads, or contain backup data, OAuth credentials, or a recovery password.</div>
+    <p>Read the <a href="privacy.html">Privacy Policy</a> for data access, storage, retention, and how to revoke authorization.</p>
+  </main>
+  <footer>Thai Seller OS Backup · Personal-use application · Last updated: 13 October 2026</footer>
+</body>
+</html>
